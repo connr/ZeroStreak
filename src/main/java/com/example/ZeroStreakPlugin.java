@@ -11,7 +11,6 @@ import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.FileOutputStream;
-import java.io.OutputStream;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.IOException;
@@ -38,8 +37,6 @@ public class ZeroStreakPlugin extends Plugin
 	@Inject
 	private ZeroStreakConfig config;
 	private int consecutiveZeros = 0;
-	private long lastHitsplatTime = 0;
-	private static final long TICK_DEBOUNCE_MS = 400;
 
 
 	@Provides
